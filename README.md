@@ -14,3 +14,11 @@ A spot remembers where  it was at distributed moments in the past
 - Database access  
   Read and write data to and from various data storage.
 
+
+## installation
+
+    npm install spot-marker
+    
+## Usage 
+
+    var spotMarker = require('spot-marker');
