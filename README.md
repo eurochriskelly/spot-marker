@@ -22,3 +22,16 @@ A spot remembers where  it was at distributed moments in the past
 ## Usage 
 
     var spotMarker = require('spot-marker');
+
+
+## Spot data
+   Spot data is store
+
+ *-* : Time spans.
+ *+* : Position at give timespan.
+ *#* : Interpolation not valid between this and next point
+
+    P1 +----+-----#        +----+--------------+
+    P2    +------+-------+------------+
+    P3       +------------+
+    P4                +------#  ++---------+
