@@ -1,6 +1,6 @@
 {
   "name": "spot-marker",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Temporal information about spherical surface points",
   "main": "lib/index.js",
   "scripts": {
