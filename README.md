@@ -18,14 +18,14 @@ A spot remembers where  it was at distributed moments in the past
 ## installation
 
     npm install spot-marker
-    
-## Usage 
+
+## Usage
 
     var spotMarker = require('spot-marker');
 
 
 ## Spot data
-   Spot data is store
+   Spot data is store as points in time as illustrated below.
 
  *-* : Time spans.
  *+* : Position at give timespan.
@@ -35,3 +35,18 @@ A spot remembers where  it was at distributed moments in the past
     P2    +------+-------+------------+
     P3       +------------+
     P4                +------#  ++---------+
+
+### Data structure
+
+    [{
+        id : 'xo93iksd',    // shortid
+        type : 'spot-mark', // for filtering
+        dirty : false,      // has changed and needs to be saved
+        positionTrack : [
+           { lat : NN, long : MM, era : whenMya },
+           { lat : NN, long : MM, era : whenMya },
+           { lat : NN, long : MM, era : whenMya }
+        ]
+     },{
+        ...
+     }]
